@@ -1,0 +1,232 @@
+/* DESIGN TOKENS — PUP One UI */
+:root {
+  /* Primary Palette */
+  --maroon: #580000;
+  --maroon-hover: #6d0000;
+  --maroon-active: #450000;
+  --maroon-muted: #f2e8e8;
+  --maroon-tint: rgba(88, 0, 0, 0.08);
+  --gold: #C8960C;
+  --gold-hover: #b07d08;
+  --gold-light: #e8b930;
+  --gold-muted: #FAEEDA;
+
+  /* Surfaces */
+  --bg: #F5F7FA;
+  --surface: #FFFFFF;
+  --surface-raised: #FFFFFF;
+  --border: #E4E4E4;
+  --border-strong: #CACACA;
+
+  /* Text */
+  --text-primary: #1A1A1A;
+  --text-secondary: #5C5C5C;
+  --text-disabled: #A0A0A0;
+  --text-inverse: #FFFFFF;
+
+  /* Semantic States */
+  --success-text: #1D9E75;
+  --success-bg: #EAF3DE;
+  --success-border: rgba(29, 158, 117, 0.2);
+  --warning-text: #BA7517;
+  --warning-bg: #FAEEDA;
+  --warning-border: rgba(186, 117, 23, 0.2);
+  --error-text: #E24B4A;
+  --error-bg: #FCEBEB;
+  --error-border: rgba(226, 75, 74, 0.2);
+  --info-text: #1B3A6B;
+  --info-bg: #E6F1FB;
+  --info-border: rgba(27, 58, 107, 0.2);
+
+  /* Typography */
+  --font-display: 'DM Serif Display', Georgia, serif;
+  --font-ui: 'DM Sans', sans-serif;
+
+  /* Type Scale */
+  --text-2xl: 24px;
+  --text-xl: 20px;
+  --text-lg: 18px;
+  --text-md: 16px;
+  --text-base: 14px;
+  --text-sm: 13px;
+  --text-xs: 12px;
+  --text-2xs: 11px;
+
+  /* Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.07), 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.10);
+  --shadow-modal: 0 20px 60px rgba(0, 0, 0, 0.18);
+}
+
+
+/* RESET + BASE */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-ui);
+  background: var(--bg);
+  color: var(--text-primary);
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* PAGE WRAPPER */
+
+.lib-page {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 99px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-disabled);
+}
+
+/* PAGE HEADER */
+.sticky-breadcrumb-row {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #F8FAFC;
+  height: 61px;
+  padding-top: 0;
+  margin-top: -32px;
+  padding-bottom: 0;
+  border-bottom: 1px solid #E2E8F0;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 32px;
+  margin-left: -32px;
+  padding-right: 32px;
+  margin-right: -32px;
+}
+
+.breadcrumb-text {
+  font-size: 12px;
+  color: #64748B;
+  font-weight: 500;
+}
+
+.active-period-badge {
+  background: #FEF2F2;
+  color: #800000;
+  border: 1px solid rgba(128, 0, 0, 0.15);
+  border-radius: 9999px;
+  padding: 4px 10px;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 24px;
+  gap: 16px;
+}
+
+.title-text {
+  font-family: var(--font-display, 'DM Serif Display', Georgia, serif);
+  font-size: 26px;
+  font-weight: 500;
+  color: #0F172A;
+  margin: 0;
+  line-height: 1.2;
+}
+
+@media (max-width: 960px) {
+  .sticky-breadcrumb-row {
+    padding-top: 0;
+    margin-top: -24px;
+    padding-left: 20px;
+    margin-left: -20px;
+    padding-right: 20px;
+    margin-right: -20px;
+    height: 56px;
+  }
+
+  .header-user-text {
+    display: none !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .sticky-breadcrumb-row {
+    padding-top: 0;
+    margin-top: -16px;
+    padding-left: 12px;
+    margin-left: -12px;
+    padding-right: 12px;
+    margin-right: -12px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 52px;
+    gap: 8px;
+  }
+
+  .title-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+
+  .title-text {
+    font-size: 20px;
+  }
+
+  .header-user-text {
+    display: none !important;
+  }
+}
+
+/* Color required form asterisks in red */
+.MuiFormLabel-asterisk {
+  color: #ef4444 !important;
+}

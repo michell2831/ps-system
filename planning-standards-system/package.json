@@ -1,0 +1,28 @@
+{
+  "name": "planning-standards-system",
+  "version": "1.0.0",
+  "description": "PUP Caloocan — Planning & Standards System",
+  "private": true,
+  "scripts": {
+    "start:catalogue": "cd src/modules/service-catalogue && npm run start:dev",
+    "start:kpi-sla": "cd src/modules/kpi-sla && npm run start:dev",
+    "start:commitment": "cd src/modules/commitment && npm run start:dev",
+    "install:all": "cd src/modules/service-catalogue && npm install && cd ../kpi-sla && npm install && cd ../commitment && npm install",
+    "docker:up": "docker compose up --build",
+    "docker:down": "docker compose down",
+    "seed:all": "node scripts/seed-all.js"
+  },
+  "devDependencies": {
+    "@nestjs/common": "^11.1.26",
+    "@nestjs/config": "^4.0.4",
+    "@nestjs/core": "^11.1.26",
+    "@types/jsonwebtoken": "^9.0.10",
+    "jsonwebtoken": "^9.0.3"
+  },
+  "dependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.9.3",
+    "express": "^5.2.1",
+    "kafkajs": "^2.2.4"
+  }
+}

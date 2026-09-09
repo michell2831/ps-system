@@ -1,0 +1,257 @@
+services:
+
+  # ── service-catalogue ──────────────────────────────────────────────────────
+  service-catalogue:
+    build:
+      context: .
+      dockerfile: src/modules/service-catalogue/Dockerfile
+    container_name: pss-service-catalogue
+    ports:
+      - '3010:4000'
+    env_file:
+      - ./src/modules/service-catalogue/.env
+    environment:
+      PORT: 4000
+      DB_HOST: postgres-catalogue
+      DB_PORT: 5432
+      DB_USERNAME: postgres
+      DB_PASSWORD: steph123gd
+      DB_NAME: service-catalogue-db
+    depends_on:
+      postgres-catalogue:
+        condition: service_healthy
+    networks:
+      - pss-network
+    restart: unless-stopped
+
+  postgres-catalogue:
+    image: postgres:16-alpine
+    container_name: pss-postgres-catalogue
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: steph123gd
+      POSTGRES_DB: service-catalogue-db
+    ports:
+      - '5442:5432'
+    volumes:
+      - postgres_catalogue_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U postgres -d service-catalogue-db']
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+    networks:
+      - pss-network
+
+  # ── kpi-sla ────────────────────────────────────────────────────────────────
+  kpi-sla:
+    build:
+      context: .
+      dockerfile: src/modules/kpi-sla/Dockerfile
+    container_name: pss-kpi-sla
+    ports:
+      - '3011:4001'
+    env_file:
+      - ./src/modules/kpi-sla/.env
+    environment:
+      PORT: 4001
+      DB_HOST: postgres-kpi-sla
+      DB_PORT: 5432
+      DB_USERNAME: postgres
+      DB_PASSWORD: steph123gd
+      DB_NAME: kpi-sla-db
+      SERVICE_CATALOGUE_URL: http://service-catalogue:4000
+    depends_on:
+      postgres-kpi-sla:
+        condition: service_healthy
+      service-catalogue:
+        condition: service_started
+    networks:
+      - pss-network
+    restart: unless-stopped
+
+  postgres-kpi-sla:
+    image: postgres:16-alpine
+    container_name: pss-postgres-kpi-sla
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: steph123gd
+      POSTGRES_DB: kpi-sla-db
+    ports:
+      - '5443:5432'
+    volumes:
+      - postgres_kpi_sla_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U postgres -d kpi-sla-db']
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+    networks:
+      - pss-network
+
+  # ── commitment ──────────────────────────────────────────────────────────────
+  commitment:
+    build:
+      context: .
+      dockerfile: src/modules/commitment/Dockerfile
+    container_name: pss-commitment
+    ports:
+      - '3012:4002'
+    env_file:
+      - ./src/modules/commitment/.env
+    environment:
+      PORT: 4002
+      DB_HOST: postgres-commitment
+      DB_PORT: 5432
+      DB_USERNAME: postgres
+      DB_PASSWORD: steph123gd
+      DB_NAME: commitment-db
+      SERVICE_CATALOGUE_URL: http://service-catalogue:4000
+      KPI_SLA_URL: http://kpi-sla:4001
+      KAFKA_BROKER: host.docker.internal:9092
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      postgres-commitment:
+        condition: service_healthy
+      service-catalogue:
+        condition: service_started
+      kpi-sla:
+        condition: service_started
+    networks:
+      - pss-network
+    restart: unless-stopped
+
+  postgres-commitment:
+    image: postgres:16-alpine
+    container_name: pss-postgres-commitment
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: steph123gd
+      POSTGRES_DB: commitment-db
+    ports:
+      - '5444:5432'
+    volumes:
+      - postgres_commitment_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U postgres -d commitment-db']
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+    networks:
+      - pss-network
+
+
+  # ── planning ──────────────────────────────────────────────────────────────
+  planning:
+    build:
+      context: .
+      dockerfile: src/modules/planning/Dockerfile
+    container_name: pss-planning
+    ports:
+      - '3013:4005'
+    env_file:
+      - ./src/modules/planning/.env
+    environment:
+      PORT: 4005
+      KPI_SLA_URL: http://kpi-sla:4001
+      SERVICE_CATALOGUE_URL: http://service-catalogue:4000
+      COMMITMENT_URL: http://commitment:4002
+      API_GATEWAY_URL: http://api-gateway:4003
+      ARMS_AUTH_URL: http://host.docker.internal:3000
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      - service-catalogue
+      - kpi-sla
+      - commitment
+    networks:
+      - pss-network
+    restart: unless-stopped
+
+  # ── api-gateway ────────────────────────────────────────────────────────────
+  api-gateway:
+    build:
+      context: .
+      dockerfile: src/modules/api-gateway/Dockerfile
+    container_name: pss-api-gateway
+    ports:
+      - '4003:4003'
+    environment:
+      SERVICE_CATALOGUE_URL: http://service-catalogue:4000
+      KPI_SLA_URL: http://kpi-sla:4001
+      COMMITMENT_URL: http://commitment:4002
+      PLANNING_URL: http://planning:4005
+      ARMS_AUTH_URL: http://host.docker.internal:3000
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      - service-catalogue
+      - kpi-sla
+      - commitment
+      - planning
+    networks:
+      - pss-network
+    restart: unless-stopped
+
+  # ── frontend ─────────────────────────────────────────────────────────────
+  frontend:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    container_name: pss-frontend
+    ports:
+      - '5174:5175'
+    environment:
+      PROXY_CATALOGUE_URL: http://service-catalogue:4000
+      PROXY_KPI_SLA_URL: http://kpi-sla:4001
+      PROXY_COMMITMENT_URL: http://commitment:4002
+      API_GATEWAY_URL: http://api-gateway:4003
+    volumes:
+      - ../src:/app/src
+      - ../public:/app/public
+      - ../vite.config.js:/app/vite.config.js
+    depends_on:
+      - service-catalogue
+      - kpi-sla
+      - commitment
+    networks:
+      - pss-network
+    restart: unless-stopped
+
+  # ── pgAdmin (database viewer) ───────────────────────────────────────────
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: pss-pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@pss.com
+      PGADMIN_DEFAULT_PASSWORD: admin123
+      PGADMIN_LISTEN_PORT: 5050
+    ports:
+      - '5051:5050'
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+      - ./pgadmin-servers.json:/pgadmin4/servers.json
+    depends_on:
+      postgres-catalogue:
+        condition: service_healthy
+      postgres-kpi-sla:
+        condition: service_healthy
+      postgres-commitment:
+        condition: service_healthy
+    networks:
+      - pss-network
+    restart: unless-stopped
+
+volumes:
+  postgres_catalogue_data:
+  postgres_kpi_sla_data:
+  postgres_commitment_data:
+  pgadmin_data:
+
+networks:
+  pss-network:
+    driver: bridge

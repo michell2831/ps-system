@@ -1,0 +1,31 @@
+{
+  "Servers": {
+    "1": {
+      "Name": "Service Catalogue DB",
+      "Group": "PSS Databases",
+      "Host": "postgres-catalogue",
+      "Port": 5432,
+      "MaintenanceDB": "service-catalogue-db",
+      "Username": "postgres",
+      "SSLMode": "prefer"
+    },
+    "2": {
+      "Name": "KPI/SLA DB",
+      "Group": "PSS Databases",
+      "Host": "postgres-kpi-sla",
+      "Port": 5432,
+      "MaintenanceDB": "kpi-sla-db",
+      "Username": "postgres",
+      "SSLMode": "prefer"
+    },
+    "3": {
+      "Name": "Commitment DB",
+      "Group": "PSS Databases",
+      "Host": "postgres-commitment",
+      "Port": 5432,
+      "MaintenanceDB": "commitment-db",
+      "Username": "postgres",
+      "SSLMode": "prefer"
+    }
+  }
+}

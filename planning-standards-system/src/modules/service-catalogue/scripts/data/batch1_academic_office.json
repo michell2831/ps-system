@@ -1,0 +1,640 @@
+[
+  {
+    "name": "Processing of Application for Change of Enrollment",
+    "service_mode": "Adding of Subject",
+    "office": "Campus Academic Office",
+    "responsible_unit": "Campus Academic Office",
+    "classification": "Simple",
+    "sla_target_value": 18,
+    "sla_target_unit": "minutes",
+    "required_documents": "Accomplished ACE Form (Adding of Subject)",
+    "processing_steps": [
+      "Accept, evaluate, and sign the ACE Form (Adding of Subjects)",
+      "Tag the subject(s) indicated in the ACE Form",
+      "Accept payment and issue official receipt (for students not covered by R.A. 10931)",
+      "Accept the fully accomplished ACE Form",
+      "Submit ACE Form to Registrar's Office"
+    ],
+    "expected_output": "Enrolled additional subject/s tagged in SIS",
+    "status": "active",
+    "intake_fields": [
+      {
+        "label": "Accomplished ACE Form (Adding of Subject)",
+        "field_type": "checkbox",
+        "is_required": true,
+        "display_order": 1,
+        "dropdown_options": null
+      }
+    ]
+  },
+  {
+    "name": "Processing of Application for Cross-Enrollment",
+    "service_mode": null,
+    "office": "Campus Academic Office",
+    "responsible_unit": "Campus Academic Office",
+    "classification": "Simple",
+    "sla_target_value": 10,
+    "sla_target_unit": "minutes",
+    "required_documents": "Application Letter for Cross-Enrollment; Permit to Cross-Enroll",
+    "processing_steps": [
+      "Evaluate letter provided by the student",
+      "Approve or deny request for cross-enrollment",
+      "If approved, recommend cross-enrollment and advise student to proceed to the Registrar's Office",
+      "Approve cross-enrollment",
+      "Issue permit to cross-enroll",
+      "Advise student to process the permit to the university where student intends to cross-enroll"
+    ],
+    "expected_output": "Permit to cross-enroll issued to the student",
+    "status": "active",
+    "intake_fields": [
+      {
+        "label": "Application Letter for Cross-Enrollment (1 Original + 1 Photocopy)",
+        "field_type": "checkbox",
+        "is_required": true,
+        "display_order": 1,
+        "dropdown_options": null
+      },
+      {
+        "label": "Permit to Cross-Enroll (3 Original Copies, from University/Campus Registrar)",
+        "field_type": "checkbox",
+        "is_required": true,
+        "display_order": 2,
+        "dropdown_options": null
+      }
+    ]
+  },
+  {
+    "name": "Processing of Manual Enrollment",
+    "service_mode": null,
+    "office": "Campus Academic Office",
+    "responsible_unit": "Campus Academic Office",
+    "classification": "Complex",
+    "sla_target_value": 1350,
+    "sla_target_unit": "minutes",
+    "required_documents": "Manual Enrollment Form (R0)",
+    "processing_steps": [
+      "Accept and sign the R0 form (Faculty member assigned to the subject)",
+      "Accept, evaluate, and sign the R0 form (Director/Head of Academic Program)",
+      "Tag the subject(s) indicated in the R0 Form",
+      "Accept payment and issue official receipt (Cashier's Office)"
+    ],
+    "expected_output": "Student manually enrolled and subjects tagged in SIS",
+    "status": "active",
+    "intake_fields": [
+      {
+        "label": "Manual Enrollment Form (R0) (1 Original + 1 Photocopy, from respective campus offices)",
+        "field_type": "checkbox",
+        "is_required": true,
+        "display_order": 1,
+        "dropdown_options": null
+      }
+    ]
+  },
+  {
+    "name": "Processing of Application for Overload of Subjects",
+    "service_mode": null,
+    "office": "Campus Academic Office",
+    "responsible_unit": "Campus Academic Office",
+    "classification": "Simple",
+    "sla_target_value": 7,
+    "sla_target_unit": "minutes",
+    "required_documents": "Request Letter for Overload; SIS Generated Curriculum Profile; Request for Overload Form; Fully-accomplished ACE Form; Certificate of Registration (current semester)",
+    "processing_steps": [
+      "Check requirements presented",
+      "Verify correctness of documents by checking the SIS grade file of the student",
+      "Recommend the request for approval of the Director",
+      "Approve or deny the request (Campus Director)",
+      "Add corresponding units in the student account through SIS Academic Management System",
+      "Advise student to proceed to Application for Change of Enrollment Process (Adding of Subject/s)"
+    ],
+    "expected_output": "Overload units added to student SIS account; student proceeds to ACE process",
+    "status": "active",
+    "intake_fields": [
+      {
+        "label": "Request Letter for Overload (1 Original Copy, prepared by the client)",
+        "field_type": "checkbox",
+        "is_required": true,
+        "display_order": 1,
+        "dropdown_options": null
+      },
+      {
+        "label": "SIS Generated Curriculum Profile (1 Original Copy, from client SIS account)",
+        "field_type": "checkbox",
+        "is_required": true,
+        "display_order": 2,
+        "dropdown_options": null
+      },
+      {
+        "label": "Fully-accomplished Request for Overload Form (3 Original Copies, from respective campus)",
+        "field_type": "checkbox",
+        "is_required": true,
+        "display_order": 3,
+        "dropdown_options": null
+      },
+      {
+        "label": "Fully-accomplished ACE Form (3 Original Copies, from PUP website)",
+        "field_type": "checkbox",
+        "is_required": true,
+        "display_order": 4,
+        "dropdown_options": null
+      },
+      {
+        "label": "Certificate of Registration for the current semester (1 Original Copy, from Admissions Office)",
+        "field_type": "checkbox",
+        "is_required": true,
+        "display_order": 5,
+        "dropdown_options": null
+      },
+      {
+        "label": "SIS Generated Curriculum Profile — for verification (1 Original Copy, from student SIS account)",
+        "field_type": "checkbox",
+        "is_required": true,
+        "display_order": 6,
+        "dropdown_options": null
+      }
+    ]
+  },
+  {
+    "name": "Processing of Application for Correction of Grade Entry, Late Reporting of Grades and Removal of Incomplete Mark",
+    "service_mode": null,
+    "office": "Campus Academic Office",
+    "responsible_unit": "Campus Academic Office",
+    "classification": "Complex",
+    "sla_target_value": 1358,
+    "sla_target_unit": "minutes",
+    "required_documents": "Completion Form (3 copies); Copy of Class Record (3 copies); Notarized Affidavit for Change of Grade",
+    "processing_steps": [
+      "Accept payment and issue an official receipt",
+      "Evaluate the requirements; compute and give grade to the student",
+      "Receive the accomplished completion form, class record, and student requirements with notarized affidavit",
+      "Sign the Completion Form",
+      "Log and forward all requirements to the Registrar's Office",
+      "Sign the Completion Form and tag the accomplished grade to SIS",
+      "Return one (1) copy of the completion form to the student"
+    ],
+    "expected_output": "Corrected or completed grade tagged in SIS; student receives copy of completion form",
+    "status": "active",
+    "intake_fields": [
+      {
+        "label": "Completion Form (3 Original Copies, downloadable from PUP website)",
+        "field_type": "checkbox",
+        "is_required": true,
+        "display_order": 1,
+        "dropdown_options": null
+      },
+      {
+        "label": "Copy of Class Record (3 Original Copies, from assigned professor)",
+        "field_type": "checkbox",
+        "is_required": true,
+        "display_order": 2,
+        "dropdown_options": null
+      },
+      {
+        "label": "Notarized Affidavit for Change of Grade (for correction of entry or late reporting, from Notary Public)",
+        "field_type": "checkbox",
+        "is_required": true,
+        "display_order": 3,
+        "dropdown_options": null
+      }
+    ]
+  },
+  {
+    "name": "Processing of Application for Shifting",
+    "service_mode": null,
+    "office": "Campus Academic Office",
+    "responsible_unit": "Campus Academic Office",
+    "classification": "Simple",
+    "sla_target_value": 27,
+    "sla_target_unit": "minutes",
+    "required_documents": "Certified Copy of Grades; Fully-accomplished Shifting Form",
+    "processing_steps": [
+      "Collect payment from student",
+      "Print the copy of grades",
+      "Certify the copy of grades",
+      "Check the fully-accomplished shifting form",
+      "Evaluate certified copy of grades",
+      "Interview and assess student capability and skills",
+      "Accept student in the program and sign the acceptance portion of the shifting form",
+      "Sign the release portion of the shifting form",
+      "Advise student to proceed to the Director's Office for final approval",
+      "Sign the approval portion of the shifting form",
+      "Advise student to proceed to the Registrar's Office for transfer of credentials and enrollment"
+    ],
+    "expected_output": "Approved shifting form; student transferred to new program and proceeds to Registrar for enrollment",
+    "status": "active",
+    "intake_fields": [
+      {
+        "label": "Certified Copy of Grades (1 Original + 1 Photocopy, from Admissions Office)",
+        "field_type": "checkbox",
+        "is_required": true,
+        "display_order": 1,
+        "dropdown_options": null
+      },
+      {
+        "label": "Fully-accomplished Shifting Form (3 copies, from respective campus offices)",
+        "field_type": "checkbox",
+        "is_required": true,
+        "display_order": 2,
+        "dropdown_options": null
+      }
+    ]
+  },
+  {
+    "name": "Processing of Online Petition of Subject",
+    "service_mode": null,
+    "office": "Campus Academic Office",
+    "responsible_unit": "Campus Academic Office",
+    "classification": "Simple",
+    "sla_target_value": 620,
+    "sla_target_unit": "minutes",
+    "required_documents": "Online petition of subject (submitted via SIS student portal)",
+    "processing_steps": [
+      "Review petitioned subject",
+      "Endorse petition to the OVPC",
+      "Evaluate the petition and approve as necessary",
+      "Forward the approved petition to the ICTO",
+      "Create section offering of the approved petitioned subject",
+      "Tag students through SIS Academic Management System"
+    ],
+    "expected_output": "Petitioned subject section created; students tagged and enrolled through SIS",
+    "status": "active",
+    "intake_fields": [
+      {
+        "label": "Online Petition of Subject (3 copies, submitted via apps.pup.edu.ph/sisstudent/Login)",
+        "field_type": "checkbox",
+        "is_required": true,
+        "display_order": 1,
+        "dropdown_options": null
+      }
+    ]
+  },
+  {
+    "name": "Processing of Online Request for Tutorial of Subject",
+    "service_mode": null,
+    "office": "Campus Academic Office",
+    "responsible_unit": "Campus Academic Office",
+    "classification": "Simple",
+    "sla_target_value": 620,
+    "sla_target_unit": "minutes",
+    "required_documents": "Online petition of tutorial subject (submitted via SIS student portal)",
+    "processing_steps": [
+      "Review request for tutorial of subject",
+      "Endorse request to the OVPC",
+      "Evaluate the request for tutorial and approve as necessary",
+      "Forward the approved request to the ICTO",
+      "Create section offering of the tutorial subject",
+      "Tag students through SIS Academic Management System"
+    ],
+    "expected_output": "Tutorial subject section created; students tagged and enrolled through SIS",
+    "status": "active",
+    "intake_fields": [
+      {
+        "label": "Online Petition of Tutorial Subject (1 Original + 1 Photocopy, submitted via apps.pup.edu.ph/sisstudent/Login)",
+        "field_type": "checkbox",
+        "is_required": true,
+        "display_order": 1,
+        "dropdown_options": null
+      }
+    ]
+  },
+  {
+    "name": "Processing of Request for Certification (Grades, Bonafide Student, General Weighted Average)",
+    "service_mode": null,
+    "office": "Campus Academic Office",
+    "responsible_unit": "Campus Academic Office",
+    "classification": "Simple",
+    "sla_target_value": 37,
+    "sla_target_unit": "minutes",
+    "required_documents": "Accomplished request form; Identification Card (ID); Authorization Letter and ID of claimant (if representative)",
+    "processing_steps": [
+      "Accept request form",
+      "Log request in the logbook",
+      "Issue claim stub to the client",
+      "Submit request to the Registrar",
+      "Process requested document",
+      "Forward document to the Director/Head of Academic Program for signature",
+      "Issue requested document to the client",
+      "Give logbook for the client to sign (acknowledgement of receipt)"
+    ],
+    "expected_output": "Certification document (Grades, Bonafide Student, or GWA) issued and received by client",
+    "status": "active",
+    "intake_fields": [
+      {
+        "label": "Accomplished Request Form (1 Original + 1 Photocopy, from respective campus offices)",
+        "field_type": "checkbox",
+        "is_required": true,
+        "display_order": 1,
+        "dropdown_options": null
+      },
+      {
+        "label": "Identification Card (ID) (1 Original Copy, provided by requestor)",
+        "field_type": "checkbox",
+        "is_required": true,
+        "display_order": 2,
+        "dropdown_options": null
+      },
+      {
+        "label": "Authorization Letter (if claimant is a representative, not the owner of the document)",
+        "field_type": "checkbox",
+        "is_required": false,
+        "display_order": 3,
+        "dropdown_options": null
+      },
+      {
+        "label": "Identification Card (ID) of Authorized Representative",
+        "field_type": "checkbox",
+        "is_required": false,
+        "display_order": 4,
+        "dropdown_options": null
+      }
+    ]
+  },
+  {
+    "name": "Processing of Application for Change of Enrollment",
+    "service_mode": "Change of Schedule/Subject",
+    "office": "Campus Academic Office",
+    "responsible_unit": "Campus Academic Office",
+    "classification": "Complex",
+    "sla_target_value": 1380,
+    "sla_target_unit": "minutes",
+    "required_documents": "Accomplished ACE Form (Change of Schedule/Subject)",
+    "processing_steps": [
+      "Accept and sign the ACE Form (Change of Schedule/Subject) — Faculty member",
+      "Accept, evaluate, and sign the ACE Form — Director/Head of Academic Programs",
+      "Tag the subject(s) indicated in the ACE Form",
+      "Accept payment and issue official receipt (for students not covered by R.A. 10931)",
+      "Accept the fully accomplished ACE Form",
+      "Submit ACE Form to the Registrar's Office"
+    ],
+    "expected_output": "Schedule or subject changed and tagged in SIS; ACE Form forwarded to Registrar",
+    "status": "active",
+    "intake_fields": [
+      {
+        "label": "Accomplished ACE Form (Change of Schedule/Subject) (3 copies, downloadable from www.pup.edu.ph)",
+        "field_type": "checkbox",
+        "is_required": true,
+        "display_order": 1,
+        "dropdown_options": null
+      }
+    ]
+  },
+  {
+    "name": "Processing of Request for Correction of Entry of Grade, Completion of Incomplete Grade, Late Reporting of Grade",
+    "service_mode": null,
+    "office": "Campus Student Services and Affairs Office",
+    "responsible_unit": "Campus Student Services and Affairs Office",
+    "classification": "Complex",
+    "sla_target_value": 2459,
+    "sla_target_unit": "minutes",
+    "required_documents": "Accomplished Completion Form (3 copies); Photocopy of Class Record; Notarized Affidavit for Change of Grades; Proof of Payment",
+    "processing_steps": [
+      "Accept payment and issue official receipt",
+      "Accept application and required documents; give grade to the student",
+      "Give logbook and affix signature; validate authenticity; record duly signed completion form and submit to Campus Registrar",
+      "Accept the completion form with required documents; forward to Campus Registrar for signature; log and forward to assigned Records Analyst for SIS tagging"
+    ],
+    "expected_output": "Corrected or completed grade tagged in SIS",
+    "status": "active",
+    "intake_fields": [
+      {
+        "label": "Accomplished Completion Form (3 Original Copies, downloadable from PUP website)",
+        "field_type": "checkbox",
+        "is_required": true,
+        "display_order": 1,
+        "dropdown_options": null
+      },
+      {
+        "label": "Photocopy of Class Record of the Faculty",
+        "field_type": "checkbox",
+        "is_required": true,
+        "display_order": 2,
+        "dropdown_options": null
+      },
+      {
+        "label": "Notarized Affidavit for Change of Grades (signed by the Professor)",
+        "field_type": "checkbox",
+        "is_required": true,
+        "display_order": 3,
+        "dropdown_options": null
+      },
+      {
+        "label": "Proof of Payment (Official Receipt from Cashier's Office)",
+        "field_type": "checkbox",
+        "is_required": true,
+        "display_order": 4,
+        "dropdown_options": null
+      }
+    ]
+  },
+  {
+    "name": "Processing of Request for Correction of Name in Conformity with the Philippines Statistics Authority Certificate of Live Birth and/or Correction of Name in the School Records",
+    "service_mode": null,
+    "office": "Campus Student Services and Affairs Office",
+    "responsible_unit": "Campus Student Services and Affairs Office",
+    "classification": "Highly Technical",
+    "sla_target_value": 3302,
+    "sla_target_unit": "minutes",
+    "required_documents": "Letter to Campus Registrar; PSA Birth Certificate; Affidavit of Discrepancy; Joint Affidavit; F137A/TOR (if applicable); TOR and Diploma (if previously issued); General Clearance; 2x2 ID Picture (2 pcs); Proof of Payment; Brown Envelope; Authorization documents (if representative)",
+    "processing_steps": [
+      "Accept payment and issue official receipt",
+      "Request client to sign logbook; accept application and documents; conduct initial assessment and verification of completeness; indicate tentative release date; return client copy of application form",
+      "Process request; issue advisory and updates as necessary; notify client when document is ready for release",
+      "Verify documents presented; issue the requested certification",
+      "Request client to sign the logbook and evaluate the service rendered"
+    ],
+    "expected_output": "Corrected name reflected in school records and SIS; certification/s issued to the client",
+    "status": "active",
+    "intake_fields": [
+      {
+        "label": "Letter Addressed to the Campus Registrar (1 Original Copy, prepared by the client)",
+        "field_type": "checkbox",
+        "is_required": true,
+        "display_order": 1,
+        "dropdown_options": null
+      },
+      {
+        "label": "Original PSA Birth Certificate (1 Original + 1 Photocopy; annotated if there is a petition filed)",
+        "field_type": "checkbox",
+        "is_required": true,
+        "display_order": 2,
+        "dropdown_options": null
+      },
+      {
+        "label": "Parent Affidavit or Affidavit of Discrepancy (1 Original Copy)",
+        "field_type": "checkbox",
+        "is_required": true,
+        "display_order": 3,
+        "dropdown_options": null
+      },
+      {
+        "label": "Joint Affidavit of Two Disinterested Persons (1 Original + 1 Photocopy)",
+        "field_type": "checkbox",
+        "is_required": true,
+        "display_order": 4,
+        "dropdown_options": null
+      },
+      {
+        "label": "Corrected Copy of F137A or TOR (1 Original + 1 Photocopy, if applicable)",
+        "field_type": "checkbox",
+        "is_required": false,
+        "display_order": 5,
+        "dropdown_options": null
+      },
+      {
+        "label": "Original Copy of Transcript of Records and Diploma (1 Original + 1 Photocopy, if previously issued)",
+        "field_type": "checkbox",
+        "is_required": false,
+        "display_order": 6,
+        "dropdown_options": null
+      },
+      {
+        "label": "General Clearance (1 Original Copy, from Office of the Registrar)",
+        "field_type": "checkbox",
+        "is_required": true,
+        "display_order": 7,
+        "dropdown_options": null
+      },
+      {
+        "label": "2x2 ID Picture in Formal Attire (2 pieces)",
+        "field_type": "checkbox",
+        "is_required": true,
+        "display_order": 8,
+        "dropdown_options": null
+      },
+      {
+        "label": "Proof of Payment (Official Receipt from Cashier's Office)",
+        "field_type": "checkbox",
+        "is_required": true,
+        "display_order": 9,
+        "dropdown_options": null
+      },
+      {
+        "label": "Long Brown Envelope (1 piece)",
+        "field_type": "checkbox",
+        "is_required": true,
+        "display_order": 10,
+        "dropdown_options": null
+      },
+      {
+        "label": "Authorization Letter and Valid ID (if claimant is an immediate family member)",
+        "field_type": "checkbox",
+        "is_required": false,
+        "display_order": 11,
+        "dropdown_options": null
+      },
+      {
+        "label": "Special Power of Attorney (SPA) (if claimant is other than immediate family member)",
+        "field_type": "checkbox",
+        "is_required": false,
+        "display_order": 12,
+        "dropdown_options": null
+      }
+    ]
+  },
+  {
+    "name": "Processing of Request for Course Accreditation Service",
+    "service_mode": "Senior High School to Bridge Course",
+    "office": "Campus Student Services and Affairs Office",
+    "responsible_unit": "Campus Student Services and Affairs Office",
+    "classification": "Complex",
+    "sla_target_value": 822,
+    "sla_target_unit": "minutes",
+    "required_documents": "Accomplished Course Accreditation Form; Curriculum Sheet used upon admission; Informative copy of grades (for PUP SHS graduates) or Form 138/137 (for other SHS graduates)",
+    "processing_steps": [
+      "Give logbook and affix signature; approve and sign Accreditation of Course",
+      "Check completeness of the presented Accreditation Form; sign if complete; return to student if not complete",
+      "Accept and tag the duly signed Accreditation Form; give logbook for client to sign",
+      "Give logbook and affix signature; accept Accreditation Form for signature of the Campus Registrar"
+    ],
+    "expected_output": "SHS subjects accredited to Bridge Course; accreditation form signed and filed",
+    "status": "active",
+    "intake_fields": [
+      {
+        "label": "Accomplished Course Accreditation Form (1 Original Copy, downloadable from PUP website)",
+        "field_type": "checkbox",
+        "is_required": true,
+        "display_order": 1,
+        "dropdown_options": null
+      },
+      {
+        "label": "Curriculum Sheet Used Upon Admission (1 Original Copy, from the client)",
+        "field_type": "checkbox",
+        "is_required": true,
+        "display_order": 2,
+        "dropdown_options": null
+      },
+      {
+        "label": "Informative Copy of Grades (for PUP SHS graduates)",
+        "field_type": "checkbox",
+        "is_required": false,
+        "display_order": 3,
+        "dropdown_options": null
+      },
+      {
+        "label": "Form 138 or Form 137 (for graduates from other Senior High School)",
+        "field_type": "checkbox",
+        "is_required": false,
+        "display_order": 4,
+        "dropdown_options": null
+      }
+    ]
+  },
+  {
+    "name": "Processing of Course Accreditation Service",
+    "service_mode": "For Transferees",
+    "office": "Campus Student Services and Affairs Office",
+    "responsible_unit": "Campus Student Services and Affairs Office",
+    "classification": "Complex",
+    "sla_target_value": 810,
+    "sla_target_unit": "minutes",
+    "required_documents": "Accomplished Course Accreditation Form; Curriculum Sheet upon Admission; Certified Copy of TOR (Copy for PUP); Subject Description from other school (for external transferees); Proof of Payment (for external transferees)",
+    "processing_steps": [
+      "Give logbook and affix signature; approve and sign Accreditation of Course",
+      "Give logbook and affix signature; accept Accreditation Form for signature of the Campus Registrar",
+      "Accept Accreditation Form and assess payment (for transferees from another university/branch)",
+      "Accept payment and issue official receipt",
+      "Check and validate the Accreditation Form",
+      "Check completeness; advise student to return next day if complete; return form if not complete",
+      "Accept the duly signed Accreditation Form; give logbook for client to sign and evaluate service rendered"
+    ],
+    "expected_output": "Subjects accredited and tagged in SIS; accreditation form signed and filed",
+    "status": "active",
+    "intake_fields": [
+      {
+        "label": "Accomplished Course Accreditation Form (1 Original Copy, downloadable from PUP website)",
+        "field_type": "checkbox",
+        "is_required": true,
+        "display_order": 1,
+        "dropdown_options": null
+      },
+      {
+        "label": "Curriculum Sheet upon Admission to PUP (1 Original Copy)",
+        "field_type": "checkbox",
+        "is_required": true,
+        "display_order": 2,
+        "dropdown_options": null
+      },
+      {
+        "label": "Certified Copy of Transcript of Records with Remarks 'Copy for PUP' (1 Original Copy)",
+        "field_type": "checkbox",
+        "is_required": true,
+        "display_order": 3,
+        "dropdown_options": null
+      },
+      {
+        "label": "Subject Description from Other School/University (1 Original Copy, for transferees from another university)",
+        "field_type": "checkbox",
+        "is_required": false,
+        "display_order": 4,
+        "dropdown_options": null
+      },
+      {
+        "label": "Proof of Payment (1 Original Copy from Cashier's Office, for transferees from another university; PHP 12 per unit)",
+        "field_type": "checkbox",
+        "is_required": false,
+        "display_order": 5,
+        "dropdown_options": null
+      }
+    ]
+  }
+]

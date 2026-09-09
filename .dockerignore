@@ -1,0 +1,5 @@
+node_modules
+dist
+planning-standards-system
+.git
+npm-debug.log

@@ -1,0 +1,693 @@
+[
+  {
+    "name": "Application for New Identification Card",
+    "service_mode": null,
+    "office": "Campus Student Services and Affairs Office",
+    "responsible_unit": "Campus Student Services and Affairs Office",
+    "classification": "Simple",
+    "sla_target_value": 2903,
+    "sla_target_unit": "minutes",
+    "required_documents": "Current Registration Card; Form PUP-NRID-5-OFSS-007; Proof of Payment",
+    "processing_steps": [
+      "Submit filled-out application form for new ID to the Office of Student Affairs and Services",
+      "Seek approval of the request by the OSS Director",
+      "Pay the corresponding fee at the Cashier's Office",
+      "Proceed to OSS for processing and issuance of printed ID",
+      "Sign in the OSS logbook"
+    ],
+    "expected_output": "Printed Identification Card issued to the student",
+    "status": "active",
+    "intake_fields": [
+      { "label": "Current Registration Card (1 Original Copy, from Admissions Office)", "field_type": "checkbox", "is_required": true, "display_order": 1, "dropdown_options": null },
+      { "label": "Form PUP-NRID-5-OFSS-007 — Application for New ID (1 Original Copy, from Admissions Office)", "field_type": "checkbox", "is_required": true, "display_order": 2, "dropdown_options": null },
+      { "label": "Proof of Payment — Official Receipt from Cashier's Office (1 Original Copy)", "field_type": "checkbox", "is_required": true, "display_order": 3, "dropdown_options": null }
+    ]
+  },
+  {
+    "name": "Application for Replacement of Lost Identification Card",
+    "service_mode": null,
+    "office": "Campus Student Services and Affairs Office",
+    "responsible_unit": "Campus Student Services and Affairs Office",
+    "classification": "Simple",
+    "sla_target_value": 2903,
+    "sla_target_unit": "minutes",
+    "required_documents": "Notarized Affidavit of Loss; Form PUP-NRID-5-OFSS-007; Proof of Payment",
+    "processing_steps": [
+      "Submit filled-out replacement ID form to the Office of Student Affairs and Services",
+      "Pay corresponding fee at the Cashier's Office",
+      "Present official receipt for processing and issuance of replacement ID",
+      "Sign in the OSS logbook"
+    ],
+    "expected_output": "Replacement Identification Card issued to the student",
+    "status": "active",
+    "intake_fields": [
+      { "label": "Notarized Affidavit of Loss (1 Original Copy, from Notary Public)", "field_type": "checkbox", "is_required": true, "display_order": 1, "dropdown_options": null },
+      { "label": "Form PUP-NRID-5-OFSS-007 — Application for Replacement of Lost ID (1 Original Copy, from Admissions Office)", "field_type": "checkbox", "is_required": true, "display_order": 2, "dropdown_options": null },
+      { "label": "Proof of Payment — Official Receipt from Cashier's Office (1 Original Copy)", "field_type": "checkbox", "is_required": true, "display_order": 3, "dropdown_options": null }
+    ]
+  },
+  {
+    "name": "Consultation Service",
+    "service_mode": null,
+    "office": "Campus Student Services and Affairs Office",
+    "responsible_unit": "Campus Student Services and Affairs Office",
+    "classification": "Simple",
+    "sla_target_value": 28,
+    "sla_target_unit": "minutes",
+    "required_documents": "Identification Card or Registration Certificate; Letter of Request noted by Faculty/Chair/Dean; Appointment Slip",
+    "processing_steps": [
+      "Proceed to front desk and present required documents",
+      "Sign in the client logbook",
+      "Accomplish Appointment Slip; assigned to counselor",
+      "Undergo background verification with counselor",
+      "Collect information for the topic or area to be consulted",
+      "Secure appointment slip for follow-up session if needed"
+    ],
+    "expected_output": "Consultation conducted; follow-up appointment provided if necessary",
+    "status": "active",
+    "intake_fields": [
+      { "label": "Identification Card or Registration Certificate (1 Original Copy, from Admissions Office)", "field_type": "checkbox", "is_required": true, "display_order": 1, "dropdown_options": null },
+      { "label": "Letter of Request noted by Faculty-in-Charge, Chair, or Dean (1 Original Copy, from Department/College)", "field_type": "checkbox", "is_required": true, "display_order": 2, "dropdown_options": null },
+      { "label": "Appointment Slip (1 Original Copy, from Office of Counseling and Psychological Services front desk)", "field_type": "checkbox", "is_required": true, "display_order": 3, "dropdown_options": null }
+    ]
+  },
+  {
+    "name": "Counseling Service",
+    "service_mode": null,
+    "office": "Campus Student Services and Affairs Office",
+    "responsible_unit": "Campus Student Services and Affairs Office",
+    "classification": "Simple",
+    "sla_target_value": 44,
+    "sla_target_unit": "minutes",
+    "required_documents": "Identification Card or Registration Certificate; Referral Slip; Call Slip; Appointment Slip; Personal Data Sheet",
+    "processing_steps": [
+      "Proceed to front desk and present required documents to schedule a counseling session",
+      "Sign in the client logbook",
+      "Accomplish the Personal Data Sheet",
+      "Undergo initial assessment: interview, gather information, discuss counseling procedures",
+      "Secure appointment slip for additional sessions if needed"
+    ],
+    "expected_output": "Counseling session conducted; follow-up session scheduled if required",
+    "status": "active",
+    "intake_fields": [
+      { "label": "Identification Card or Registration Certificate (1 Original Copy, from Admissions Office)", "field_type": "checkbox", "is_required": true, "display_order": 1, "dropdown_options": null },
+      { "label": "Referral Slip (1 Original Copy, from Office of Counseling and Psychological Services front desk)", "field_type": "checkbox", "is_required": true, "display_order": 2, "dropdown_options": null },
+      { "label": "Call Slip (1 Original Copy, from the client's College or Department)", "field_type": "checkbox", "is_required": true, "display_order": 3, "dropdown_options": null },
+      { "label": "Appointment Slip (1 Original Copy, from Office of Counseling and Psychological Services)", "field_type": "checkbox", "is_required": true, "display_order": 4, "dropdown_options": null },
+      { "label": "Personal Data Sheet (1 Original Copy, from Office of Counseling and Psychological Services)", "field_type": "checkbox", "is_required": true, "display_order": 5, "dropdown_options": null }
+    ]
+  },
+  {
+    "name": "Issuance of Recommendation Letter",
+    "service_mode": null,
+    "office": "Campus Student Services and Affairs Office",
+    "responsible_unit": "Campus Student Services and Affairs Office",
+    "classification": "Simple",
+    "sla_target_value": 50,
+    "sla_target_unit": "minutes",
+    "required_documents": "Identification Card or Registration Certificate; Photocopy of Grades; Duly Accomplished Exit Interview Form",
+    "processing_steps": [
+      "Present required documents; receive logbook and sign in",
+      "Accomplish Exit Interview Form",
+      "Undergo background verification",
+      "Issuance of the Recommendation Letter"
+    ],
+    "expected_output": "Recommendation Letter issued to transferring or graduating student",
+    "status": "active",
+    "intake_fields": [
+      { "label": "Identification Card or Registration Certificate (1 Original Copy)", "field_type": "checkbox", "is_required": true, "display_order": 1, "dropdown_options": null },
+      { "label": "Photocopy of Grades (1 Photocopy, from PUP SIS account)", "field_type": "checkbox", "is_required": true, "display_order": 2, "dropdown_options": null },
+      { "label": "Duly Accomplished Exit Interview Form (1 Original Copy, from Campus Guidance Office or OSAS)", "field_type": "checkbox", "is_required": true, "display_order": 3, "dropdown_options": null }
+    ]
+  },
+  {
+    "name": "Issuance of Student or Alumni Referral and Recommendation",
+    "service_mode": null,
+    "office": "Campus Student Services and Affairs Office",
+    "responsible_unit": "Campus Student Services and Affairs Office",
+    "classification": "Simple",
+    "sla_target_value": 37,
+    "sla_target_unit": "minutes",
+    "required_documents": "Identification Card or Registration Certificate; Photocopy of Grades; Duly Accomplished Exit Interview Form",
+    "processing_steps": [
+      "Present required documents; sign in logbook",
+      "Accomplish Exit Interview Form",
+      "Undergo background verification",
+      "Issuance of Referral and Recommendation document"
+    ],
+    "expected_output": "Student or Alumni Referral and Recommendation Letter issued",
+    "status": "active",
+    "intake_fields": [
+      { "label": "Identification Card or Registration Certificate (1 Original Copy)", "field_type": "checkbox", "is_required": true, "display_order": 1, "dropdown_options": null },
+      { "label": "Photocopy of Grades (1 Photocopy, from PUP SIS account)", "field_type": "checkbox", "is_required": true, "display_order": 2, "dropdown_options": null },
+      { "label": "Duly Accomplished Exit Interview Form (1 Original Copy, from Campus Guidance Office or OSAS)", "field_type": "checkbox", "is_required": true, "display_order": 3, "dropdown_options": null }
+    ]
+  },
+  {
+    "name": "Permission to Conduct an Activity",
+    "service_mode": null,
+    "office": "Campus Student Services and Affairs Office",
+    "responsible_unit": "Campus Student Services and Affairs Office",
+    "classification": "Simple",
+    "sla_target_value": 7,
+    "sla_target_unit": "minutes",
+    "required_documents": "Current Registration Card or ID (or Alumni ID/TOR for graduates); Form PUP-RPCA-5-OFSS-003; Letter of Request",
+    "processing_steps": [
+      "Present letter of request addressed to the Head of Student Affairs and Services, noted by Organization Adviser",
+      "Staff receives and checks the letter"
+    ],
+    "expected_output": "Permission to conduct activity reviewed and approved",
+    "status": "active",
+    "intake_fields": [
+      { "label": "Current Registration Card or ID (for enrolled students), OR Alumni ID or TOR with picture (for graduates)", "field_type": "checkbox", "is_required": true, "display_order": 1, "dropdown_options": null },
+      { "label": "Form PUP-RPCA-5-OFSS-003 — Request for Permission to Conduct Activity (1 Original Copy, from OSAS)", "field_type": "checkbox", "is_required": true, "display_order": 2, "dropdown_options": null },
+      { "label": "Letter of Request addressed to Head of Student Affairs and Services, noted by Organization Adviser (1 Original Copy)", "field_type": "checkbox", "is_required": true, "display_order": 3, "dropdown_options": null }
+    ]
+  },
+  {
+    "name": "Processing of Request for Academic Verification Service",
+    "service_mode": null,
+    "office": "Campus Student Services and Affairs Office",
+    "responsible_unit": "Campus Student Services and Affairs Office",
+    "classification": "Complex",
+    "sla_target_value": 2937,
+    "sla_target_unit": "minutes",
+    "required_documents": "Letter of Request with letterhead; Photocopy of TOR/Diploma or credentials; Authorization Letter signed by student/graduate; Proof of Payment (walk-in) or scanned bank proof (outside country)",
+    "processing_steps": [
+      "Submit letter request with required documents (walk-in) or via email (online)",
+      "Follow up for updates; staff processes and notifies client when ready",
+      "Pay verification fee at Cashier's Office (walk-in) or submit scanned proof (outside country)",
+      "Pick up verification results (walk-in) or receive via email (online)"
+    ],
+    "expected_output": "Academic verification result issued to requesting company or government agency",
+    "status": "active",
+    "intake_fields": [
+      { "label": "Letter of Request with company or agency letterhead (1 Original Copy)", "field_type": "checkbox", "is_required": true, "display_order": 1, "dropdown_options": null },
+      { "label": "Photocopy of TOR, Diploma, or credentials submitted for verification (1 Photocopy)", "field_type": "checkbox", "is_required": true, "display_order": 2, "dropdown_options": null },
+      { "label": "Authorization Letter signed by the student or graduate (1 Original Copy)", "field_type": "checkbox", "is_required": true, "display_order": 3, "dropdown_options": null },
+      { "label": "Proof of Payment — PHP 200 for local walk-in (1 Original Copy, from Cashier)", "field_type": "checkbox", "is_required": false, "display_order": 4, "dropdown_options": null },
+      { "label": "Scanned Proof of Payment via bank transfer for verification outside the country (1 Electronic Copy)", "field_type": "checkbox", "is_required": false, "display_order": 5, "dropdown_options": null }
+    ]
+  },
+  {
+    "name": "Processing of Request for Application for Graduation",
+    "service_mode": "SIS and Non-SIS",
+    "office": "Campus Student Services and Affairs Office",
+    "responsible_unit": "Campus Student Services and Affairs Office",
+    "classification": "Complex",
+    "sla_target_value": 3033,
+    "sla_target_unit": "minutes",
+    "required_documents": "Accomplished Application for Graduation via SIS; Accomplished Application for Graduation Non-SIS Form; Proof of Payment (if not covered by RA 10931)",
+    "processing_steps": [
+      "Pay application for graduation fee at Cashier's Office if not covered by RA 10931",
+      "Submit two copies of accomplished Application for Graduation (SIS or Non-SIS)",
+      "Check SIS account for updates from the Head of Student Services",
+      "Monitor SIS account for advisory from the evaluator",
+      "Proceed to Fund Management Office for payment of graduation-related fees if applicable"
+    ],
+    "expected_output": "Certificate of Candidacy and General Clearance Form issued; student cleared for graduation",
+    "status": "active",
+    "intake_fields": [
+      { "label": "Accomplished and Printed Application for Graduation via SIS Account (1 Original Copy)", "field_type": "checkbox", "is_required": true, "display_order": 1, "dropdown_options": null },
+      { "label": "Accomplished Application for Graduation — Non-SIS Form (1 Original Copy, from Admissions Office)", "field_type": "checkbox", "is_required": false, "display_order": 2, "dropdown_options": null },
+      { "label": "Proof of Payment for application fee from Cashier — if not covered by RA 10931 (1 Original Copy)", "field_type": "checkbox", "is_required": false, "display_order": 3, "dropdown_options": null }
+    ]
+  },
+  {
+    "name": "Processing of Request for Credentials Service",
+    "service_mode": "Course or Subject Description",
+    "office": "Campus Student Services and Affairs Office",
+    "responsible_unit": "Campus Student Services and Affairs Office",
+    "classification": "Complex",
+    "sla_target_value": 5023,
+    "sla_target_unit": "minutes",
+    "required_documents": "Student's Request Letter; General Clearance; 2x2 ID Picture (2 pcs); Documentary Stamp; Proof of Payment; Long Brown Envelope; Authorization Letter and ID or SPA if representative",
+    "processing_steps": [
+      "Pay processing fee at Cashier's Office",
+      "Present proof of payment and submit application; sign logbook; receive tentative release date",
+      "Check email or ODRS for updates from the Registrar",
+      "Present client copy with authorization documents for claiming",
+      "Acknowledge receipt; sign logbook and evaluate service"
+    ],
+    "expected_output": "Course or Subject Description document issued",
+    "status": "active",
+    "intake_fields": [
+      { "label": "Student's Request Letter (1 Original Copy, prepared by client)", "field_type": "checkbox", "is_required": true, "display_order": 1, "dropdown_options": null },
+      { "label": "General Clearance showing client is cleared of all accountabilities (1 Original Copy, from Campus Registrar)", "field_type": "checkbox", "is_required": true, "display_order": 2, "dropdown_options": null },
+      { "label": "2x2 ID Picture in Formal Attire (2 pieces)", "field_type": "checkbox", "is_required": true, "display_order": 3, "dropdown_options": null },
+      { "label": "Documentary Stamp (1 Original Copy, from client)", "field_type": "checkbox", "is_required": true, "display_order": 4, "dropdown_options": null },
+      { "label": "Proof of Payment — PHP 150 per course description (1 Original Copy, from Cashier)", "field_type": "checkbox", "is_required": true, "display_order": 5, "dropdown_options": null },
+      { "label": "Long Brown Envelope (1 piece, from client)", "field_type": "checkbox", "is_required": true, "display_order": 6, "dropdown_options": null },
+      { "label": "Authorization Letter and Valid ID of Claimant (if immediate family member)", "field_type": "checkbox", "is_required": false, "display_order": 7, "dropdown_options": null },
+      { "label": "Special Power of Attorney (SPA) (if claimant is other than immediate family)", "field_type": "checkbox", "is_required": false, "display_order": 8, "dropdown_options": null }
+    ]
+  },
+  {
+    "name": "Processing of Request for Correction of Entry of Grade, Completion of Incomplete Grade, Late Reporting of Grade",
+    "service_mode": null,
+    "office": "Campus Student Services and Affairs Office",
+    "responsible_unit": "Campus Student Services and Affairs Office",
+    "classification": "Complex",
+    "sla_target_value": 2459,
+    "sla_target_unit": "minutes",
+    "required_documents": "Accomplished Completion Form (3 copies); Photocopy of Class Record; Notarized Affidavit for Change of Grades; Proof of Payment",
+    "processing_steps": [
+      "Pay correction of grade fee at the Cashier",
+      "Submit Completion Form and documents to the assigned Professor for grade completion",
+      "Proceed to Program Head for signature; logbook signed; form forwarded to Registrar",
+      "Check SIS account if grade is already tagged"
+    ],
+    "expected_output": "Grade corrected or completed and tagged in SIS",
+    "status": "active",
+    "intake_fields": [
+      { "label": "Accomplished Completion Form (3 Original Copies, downloadable from PUP website)", "field_type": "checkbox", "is_required": true, "display_order": 1, "dropdown_options": null },
+      { "label": "Photocopy of Class Record of the Faculty (1 Photocopy, from assigned professor)", "field_type": "checkbox", "is_required": true, "display_order": 2, "dropdown_options": null },
+      { "label": "Notarized Affidavit for Change of Grades signed by the Professor (1 Original Copy)", "field_type": "checkbox", "is_required": true, "display_order": 3, "dropdown_options": null },
+      { "label": "Proof of Payment — PHP 30 (1 Original Copy, from Cashier)", "field_type": "checkbox", "is_required": true, "display_order": 4, "dropdown_options": null }
+    ]
+  },
+  {
+    "name": "Processing of Request for Correction of Name in Conformity with PSA Certificate of Live Birth and/or Correction of Name in School Records",
+    "service_mode": null,
+    "office": "Campus Student Services and Affairs Office",
+    "responsible_unit": "Campus Student Services and Affairs Office",
+    "classification": "Highly Technical",
+    "sla_target_value": 3302,
+    "sla_target_unit": "minutes",
+    "required_documents": "Letter to Campus Registrar; PSA Birth Certificate; Affidavit of Discrepancy; Joint Affidavit of Two Disinterested Persons; F137A/TOR if applicable; TOR and Diploma if previously issued; General Clearance; 2x2 ID Picture; Proof of Payment; Long Brown Envelope; Authorization Letter and ID or SPA if representative",
+    "processing_steps": [
+      "Pay processing fee at Cashier",
+      "Sign logbook; submit application and required documents; receive tentative release date",
+      "Check email or ODRS for updates; notify client when document is ready",
+      "Verify documents; issue requested certification",
+      "Sign logbook and evaluate service rendered"
+    ],
+    "expected_output": "Corrected name reflected in school records and SIS; certification issued",
+    "status": "active",
+    "intake_fields": [
+      { "label": "Letter Addressed to the Campus Registrar (1 Original Copy, prepared by client)", "field_type": "checkbox", "is_required": true, "display_order": 1, "dropdown_options": null },
+      { "label": "Original PSA Birth Certificate (1 Original + 1 Photocopy; annotated if petition filed)", "field_type": "checkbox", "is_required": true, "display_order": 2, "dropdown_options": null },
+      { "label": "Parent Affidavit or Affidavit of Discrepancy (1 Original Copy)", "field_type": "checkbox", "is_required": true, "display_order": 3, "dropdown_options": null },
+      { "label": "Joint Affidavit of Two Disinterested Persons (1 Original + 1 Photocopy)", "field_type": "checkbox", "is_required": true, "display_order": 4, "dropdown_options": null },
+      { "label": "Corrected Copy of F137A or Transcript of Records (1 Original + 1 Photocopy, if applicable)", "field_type": "checkbox", "is_required": false, "display_order": 5, "dropdown_options": null },
+      { "label": "Original Copy of TOR and Diploma (1 Original + 1 Photocopy, if previously issued)", "field_type": "checkbox", "is_required": false, "display_order": 6, "dropdown_options": null },
+      { "label": "General Clearance (1 Original Copy, from Office of the Registrar)", "field_type": "checkbox", "is_required": true, "display_order": 7, "dropdown_options": null },
+      { "label": "2x2 ID Picture in Formal Attire (2 pieces)", "field_type": "checkbox", "is_required": true, "display_order": 8, "dropdown_options": null },
+      { "label": "Proof of Payment (1 Original Copy, from Cashier)", "field_type": "checkbox", "is_required": true, "display_order": 9, "dropdown_options": null },
+      { "label": "Long Brown Envelope (1 piece)", "field_type": "checkbox", "is_required": true, "display_order": 10, "dropdown_options": null },
+      { "label": "Authorization Letter and Valid ID (if claimant is an immediate family member)", "field_type": "checkbox", "is_required": false, "display_order": 11, "dropdown_options": null },
+      { "label": "Special Power of Attorney (SPA) (if claimant is other than immediate family)", "field_type": "checkbox", "is_required": false, "display_order": 12, "dropdown_options": null }
+    ]
+  },
+  {
+    "name": "Processing of Request for Course Accreditation Service",
+    "service_mode": "Senior High School to Bridge Course",
+    "office": "Campus Student Services and Affairs Office",
+    "responsible_unit": "Campus Student Services and Affairs Office",
+    "classification": "Complex",
+    "sla_target_value": 822,
+    "sla_target_unit": "minutes",
+    "required_documents": "Accomplished Course Accreditation Form; Curriculum Sheet used upon admission; Informative Copy of Grades (PUP SHS) or Form 138/137 (other SHS)",
+    "processing_steps": [
+      "Give logbook and affix signature; approve and sign Accreditation of Course",
+      "Check completeness of Accreditation Form; sign if complete",
+      "Accept and tag the duly signed Accreditation Form; give logbook for client to sign",
+      "Forward Accreditation Form for signature of the Campus Registrar"
+    ],
+    "expected_output": "SHS subjects accredited to Bridge Course; accreditation form signed and filed",
+    "status": "active",
+    "intake_fields": [
+      { "label": "Accomplished Course Accreditation Form (1 Original Copy, downloadable from PUP website)", "field_type": "checkbox", "is_required": true, "display_order": 1, "dropdown_options": null },
+      { "label": "Curriculum Sheet Used Upon Admission (1 Original Copy)", "field_type": "checkbox", "is_required": true, "display_order": 2, "dropdown_options": null },
+      { "label": "Informative Copy of Grades (for PUP SHS graduates)", "field_type": "checkbox", "is_required": false, "display_order": 3, "dropdown_options": null },
+      { "label": "Form 138 or Form 137 (for graduates from other Senior High Schools)", "field_type": "checkbox", "is_required": false, "display_order": 4, "dropdown_options": null }
+    ]
+  },
+  {
+    "name": "Processing of Course Accreditation Service",
+    "service_mode": "For Transferees",
+    "office": "Campus Student Services and Affairs Office",
+    "responsible_unit": "Campus Student Services and Affairs Office",
+    "classification": "Complex",
+    "sla_target_value": 810,
+    "sla_target_unit": "minutes",
+    "required_documents": "Accomplished Course Accreditation Form; Curriculum Sheet upon Admission; Certified Copy of TOR (Copy for PUP); Subject Description from other school (external transferees); Proof of Payment (external transferees)",
+    "processing_steps": [
+      "Give logbook and affix signature; approve and sign Accreditation of Course",
+      "Forward Accreditation Form for Campus Registrar signature",
+      "Accept Accreditation Form and assess payment (for external transferees)",
+      "Accept payment and issue official receipt",
+      "Check and validate Accreditation Form; advise student when to return",
+      "Accept duly signed Accreditation Form; give logbook for client to sign"
+    ],
+    "expected_output": "Subjects accredited and tagged in SIS; accreditation form signed and filed",
+    "status": "active",
+    "intake_fields": [
+      { "label": "Accomplished Course Accreditation Form (1 Original Copy, downloadable from PUP website)", "field_type": "checkbox", "is_required": true, "display_order": 1, "dropdown_options": null },
+      { "label": "Curriculum Sheet upon Admission to PUP (1 Original Copy)", "field_type": "checkbox", "is_required": true, "display_order": 2, "dropdown_options": null },
+      { "label": "Certified Copy of Transcript of Records marked Copy for PUP (1 Original Copy)", "field_type": "checkbox", "is_required": true, "display_order": 3, "dropdown_options": null },
+      { "label": "Subject Description from Other School or University (for external university transferees only)", "field_type": "checkbox", "is_required": false, "display_order": 4, "dropdown_options": null },
+      { "label": "Proof of Payment — PHP 12 per unit from Cashier (for external university transferees only)", "field_type": "checkbox", "is_required": false, "display_order": 5, "dropdown_options": null }
+    ]
+  },
+  {
+    "name": "Processing of Request for Credentials Service",
+    "service_mode": "Certificates of Attendance, Graduation, Medium of Instruction, GWA, Non-Issuance of Special Order, CTC",
+    "office": "Campus Student Services and Affairs Office",
+    "responsible_unit": "Campus Student Services and Affairs Office",
+    "classification": "Complex",
+    "sla_target_value": 5023,
+    "sla_target_unit": "minutes",
+    "required_documents": "Student's Request Letter; General Clearance; 2x2 ID Picture (2 pcs); Official Receipt for Documentary Stamp; Proof of Payment; Long Brown Envelope; Authorization Letter and ID or SPA if representative",
+    "processing_steps": [
+      "Pay processing fee at Cashier",
+      "Submit application; sign logbook; receive tentative release date",
+      "Check email for updates; Registrar processes and notifies client when ready",
+      "Present client copy with authorization documents for claiming",
+      "Acknowledge receipt; sign logbook and evaluate service"
+    ],
+    "expected_output": "Requested certification issued to the student or alumni",
+    "status": "active",
+    "intake_fields": [
+      { "label": "Student's Request Letter (1 Original Copy, prepared by client)", "field_type": "checkbox", "is_required": true, "display_order": 1, "dropdown_options": null },
+      { "label": "General Clearance (1 Original Copy, from Registrar's Office)", "field_type": "checkbox", "is_required": true, "display_order": 2, "dropdown_options": null },
+      { "label": "2x2 ID Picture in Formal Attire (2 pieces, to be uploaded in ODRS)", "field_type": "checkbox", "is_required": true, "display_order": 3, "dropdown_options": null },
+      { "label": "Official Receipt for Documentary Stamp (1 Original Copy, from Cashier)", "field_type": "checkbox", "is_required": true, "display_order": 4, "dropdown_options": null },
+      { "label": "Proof of Payment — PHP 150 per certificate (1 Original Copy, from FMO/Cashier)", "field_type": "checkbox", "is_required": true, "display_order": 5, "dropdown_options": null },
+      { "label": "Long Brown Envelope (1 piece, from client)", "field_type": "checkbox", "is_required": true, "display_order": 6, "dropdown_options": null },
+      { "label": "Authorization Letter and Valid ID of Claimant (if immediate family member)", "field_type": "checkbox", "is_required": false, "display_order": 7, "dropdown_options": null },
+      { "label": "Special Power of Attorney (SPA) (if claimant is other than immediate family)", "field_type": "checkbox", "is_required": false, "display_order": 8, "dropdown_options": null }
+    ]
+  },
+  {
+    "name": "Processing of Request for Credentials Service",
+    "service_mode": "CAV / Apostille",
+    "office": "Campus Student Services and Affairs Office",
+    "responsible_unit": "Campus Student Services and Affairs Office",
+    "classification": "Complex",
+    "sla_target_value": 5023,
+    "sla_target_unit": "minutes",
+    "required_documents": "Student's Request Letter; General Clearance; 2x2 ID Picture (2 pcs); Documentary Stamp; Proof of Payment; Long Brown Envelope; Authorization Letter and ID or SPA if representative",
+    "processing_steps": [
+      "Pay processing fee at Cashier",
+      "Submit application; sign logbook; receive tentative release date",
+      "Check email or ODRS for updates; notified when ready",
+      "Present client copy with authorization documents for claiming",
+      "Acknowledge receipt; sign logbook and evaluate service"
+    ],
+    "expected_output": "CAV or Apostille document issued and certified",
+    "status": "active",
+    "intake_fields": [
+      { "label": "Student's Request Letter (1 Original Copy, prepared by client)", "field_type": "checkbox", "is_required": true, "display_order": 1, "dropdown_options": null },
+      { "label": "General Clearance (1 Original Copy, from Registrar's Office)", "field_type": "checkbox", "is_required": true, "display_order": 2, "dropdown_options": null },
+      { "label": "2x2 ID Picture in Formal Attire (2 pieces)", "field_type": "checkbox", "is_required": true, "display_order": 3, "dropdown_options": null },
+      { "label": "Documentary Stamp (1 Original Copy, from client)", "field_type": "checkbox", "is_required": true, "display_order": 4, "dropdown_options": null },
+      { "label": "Proof of Payment (1 Original Copy, from Cashier)", "field_type": "checkbox", "is_required": true, "display_order": 5, "dropdown_options": null },
+      { "label": "Long Brown Envelope (1 piece, from client)", "field_type": "checkbox", "is_required": true, "display_order": 6, "dropdown_options": null },
+      { "label": "Authorization Letter and Valid ID of Claimant (if immediate family member)", "field_type": "checkbox", "is_required": false, "display_order": 7, "dropdown_options": null },
+      { "label": "Special Power of Attorney (SPA) (if claimant is other than immediate family)", "field_type": "checkbox", "is_required": false, "display_order": 8, "dropdown_options": null }
+    ]
+  },
+  {
+    "name": "Processing of Request for Credentials Service",
+    "service_mode": "Transcript of Records",
+    "office": "Campus Student Services and Affairs Office",
+    "responsible_unit": "Campus Student Services and Affairs Office",
+    "classification": "Complex",
+    "sla_target_value": 5023,
+    "sla_target_unit": "minutes",
+    "required_documents": "Student's Request Letter; General Clearance; 2x2 ID Picture (2 pcs); Documentary Stamp; Proof of Payment; Long Brown Envelope; Authorization Letter and ID or SPA if representative",
+    "processing_steps": [
+      "Pay processing fee at Cashier",
+      "Submit application; sign logbook; receive tentative release date",
+      "Check email or ODRS for updates; notified when ready",
+      "Present client copy with authorization documents for claiming",
+      "Acknowledge receipt; sign logbook and evaluate service"
+    ],
+    "expected_output": "Official Transcript of Records issued and certified",
+    "status": "active",
+    "intake_fields": [
+      { "label": "Student's Request Letter (1 Original Copy, prepared by client)", "field_type": "checkbox", "is_required": true, "display_order": 1, "dropdown_options": null },
+      { "label": "General Clearance (1 Original Copy, from Registrar's Office)", "field_type": "checkbox", "is_required": true, "display_order": 2, "dropdown_options": null },
+      { "label": "2x2 ID Picture in Formal Attire (2 pieces)", "field_type": "checkbox", "is_required": true, "display_order": 3, "dropdown_options": null },
+      { "label": "Documentary Stamp (1 Original Copy, from client)", "field_type": "checkbox", "is_required": true, "display_order": 4, "dropdown_options": null },
+      { "label": "Proof of Payment (1 Original Copy, from Cashier)", "field_type": "checkbox", "is_required": true, "display_order": 5, "dropdown_options": null },
+      { "label": "Long Brown Envelope (1 piece, from client)", "field_type": "checkbox", "is_required": true, "display_order": 6, "dropdown_options": null },
+      { "label": "Authorization Letter and Valid ID of Claimant (if immediate family member)", "field_type": "checkbox", "is_required": false, "display_order": 7, "dropdown_options": null },
+      { "label": "Special Power of Attorney (SPA) (if claimant is other than immediate family)", "field_type": "checkbox", "is_required": false, "display_order": 8, "dropdown_options": null }
+    ]
+  },
+  {
+    "name": "Processing of Request for Informative Copy of Grades",
+    "service_mode": null,
+    "office": "Campus Student Services and Affairs Office",
+    "responsible_unit": "Campus Student Services and Affairs Office",
+    "classification": "Complex",
+    "sla_target_value": 810,
+    "sla_target_unit": "minutes",
+    "required_documents": "Student's Request Letter; General Clearance; 2x2 ID Picture; Proof of Payment; Long Brown Envelope; Authorization Letter and ID or SPA if representative",
+    "processing_steps": [
+      "Pay processing fee at Cashier",
+      "Submit application; sign logbook; receive tentative release date",
+      "Check email or ODRS for advisory from Registrar",
+      "Present client copy with authorization documents for claiming",
+      "Acknowledge receipt; sign logbook"
+    ],
+    "expected_output": "Informative Copy of Grades issued to the student or alumni",
+    "status": "active",
+    "intake_fields": [
+      { "label": "Student's Request Letter (1 Original Copy, prepared by client)", "field_type": "checkbox", "is_required": true, "display_order": 1, "dropdown_options": null },
+      { "label": "General Clearance (1 Original Copy, from Campus Registrar)", "field_type": "checkbox", "is_required": true, "display_order": 2, "dropdown_options": null },
+      { "label": "2x2 ID Picture in Formal Attire (2 pieces)", "field_type": "checkbox", "is_required": true, "display_order": 3, "dropdown_options": null },
+      { "label": "Proof of Payment (1 Original Copy, from Cashier)", "field_type": "checkbox", "is_required": true, "display_order": 4, "dropdown_options": null },
+      { "label": "Long Brown Envelope (1 piece, from client)", "field_type": "checkbox", "is_required": true, "display_order": 5, "dropdown_options": null },
+      { "label": "Authorization Letter and Valid ID of Claimant (if immediate family member)", "field_type": "checkbox", "is_required": false, "display_order": 6, "dropdown_options": null },
+      { "label": "Special Power of Attorney (SPA) (if claimant is other than immediate family)", "field_type": "checkbox", "is_required": false, "display_order": 7, "dropdown_options": null }
+    ]
+  },
+  {
+    "name": "Processing of Request for Leave of Absence",
+    "service_mode": null,
+    "office": "Campus Student Services and Affairs Office",
+    "responsible_unit": "Campus Student Services and Affairs Office",
+    "classification": "Complex",
+    "sla_target_value": 3269,
+    "sla_target_unit": "minutes",
+    "required_documents": "Letter of Request for Leave of Absence; Medical Certificate (if health-related); Photocopy of Approved Letter signed by Campus Registrar",
+    "processing_steps": [
+      "Submit letter of request for Leave of Absence to Admissions and Registration Office",
+      "Undergo initial assessment and verification",
+      "Receive advisory and tentative approval",
+      "Submit photocopy of approved letter signed by Campus Registrar; tagged in SIS module"
+    ],
+    "expected_output": "Leave of Absence approved and tagged in the SIS module",
+    "status": "active",
+    "intake_fields": [
+      { "label": "Letter of Request for Leave of Absence addressed to the Campus Registrar (1 Original Copy)", "field_type": "checkbox", "is_required": true, "display_order": 1, "dropdown_options": null },
+      { "label": "Medical Certificate (1 Original Copy, from PUP or Government Clinic — if LOA is health-related)", "field_type": "checkbox", "is_required": false, "display_order": 2, "dropdown_options": null },
+      { "label": "Photocopy of Approved Leave of Absence Letter signed by the Campus Registrar", "field_type": "checkbox", "is_required": true, "display_order": 3, "dropdown_options": null }
+    ]
+  },
+  {
+    "name": "Processing for Re-Admission (Returning Students)",
+    "service_mode": null,
+    "office": "Campus Student Services and Affairs Office",
+    "responsible_unit": "Campus Student Services and Affairs Office",
+    "classification": "Complex",
+    "sla_target_value": 3241,
+    "sla_target_unit": "minutes",
+    "required_documents": "Accomplished Re-Admission Form; Informative Copy of Grades or TOR; Curriculum Sheet; Latest Certificate of Registration; 2x2 Colored Picture (2 pcs); Official Receipt for re-admission; Medical Clearance",
+    "processing_steps": [
+      "Go to Admission Services; fill out re-admission form; secure clearance from Accounting and Medical Clinic",
+      "Pay re-admission fee at Cashier",
+      "For SIS students: proceed to Admission Office to re-activate account",
+      "Request Informative Copy of Grades or TOR depending on gap period",
+      "Proceed to Head of Academic Programs for evaluation and recommendation",
+      "Submit two sets of re-admission forms with attachments",
+      "Claim re-admission certificate on prescribed schedule; sign logbook",
+      "Proceed to Head of Academic Programs for enrollment"
+    ],
+    "expected_output": "Re-admission certificate issued; student enrolled under approved curriculum",
+    "status": "active",
+    "intake_fields": [
+      { "label": "Accomplished Re-Admission Form (1 Original Copy, from Admission Services)", "field_type": "checkbox", "is_required": true, "display_order": 1, "dropdown_options": null },
+      { "label": "Informative Copy of Grades (if stopped for 1 semester, to be uploaded in ODRS)", "field_type": "checkbox", "is_required": false, "display_order": 2, "dropdown_options": null },
+      { "label": "Transcript of Records (if stopped for 2 or more years from last enrollment)", "field_type": "checkbox", "is_required": false, "display_order": 3, "dropdown_options": null },
+      { "label": "Curriculum Sheet (1 Original Copy, from Head of Academic Programs)", "field_type": "checkbox", "is_required": true, "display_order": 4, "dropdown_options": null },
+      { "label": "Latest Certificate of Registration (1 Original Copy, from Admission and Registration Office)", "field_type": "checkbox", "is_required": true, "display_order": 5, "dropdown_options": null },
+      { "label": "2x2 Colored ID Picture with white background and name tag (2 pieces)", "field_type": "checkbox", "is_required": true, "display_order": 6, "dropdown_options": null },
+      { "label": "Official Receipt for Re-Admission Fee (1 Original Copy, from Cashier)", "field_type": "checkbox", "is_required": true, "display_order": 7, "dropdown_options": null },
+      { "label": "Medical Clearance (1 Original Copy, from PUP Clinic or Government Clinic)", "field_type": "checkbox", "is_required": true, "display_order": 8, "dropdown_options": null }
+    ]
+  },
+  {
+    "name": "Request for Certificate of Good Moral Character",
+    "service_mode": null,
+    "office": "Campus Student Services and Affairs Office",
+    "responsible_unit": "Campus Student Services and Affairs Office",
+    "classification": "Simple",
+    "sla_target_value": 37,
+    "sla_target_unit": "minutes",
+    "required_documents": "Accomplished Request Form; Identification Card; Authorization Letter and ID or SPA if representative",
+    "processing_steps": [
+      "Submit accomplished request form",
+      "Staff logs request and issues claim stub",
+      "Process and prepare the Certificate of Good Moral Character",
+      "Issue certificate; client signs logbook"
+    ],
+    "expected_output": "Certificate of Good Moral Character issued",
+    "status": "active",
+    "intake_fields": [
+      { "label": "Accomplished Request Form (1 Original Copy, from campus offices)", "field_type": "checkbox", "is_required": true, "display_order": 1, "dropdown_options": null },
+      { "label": "Identification Card (1 Original Copy, from requestor)", "field_type": "checkbox", "is_required": true, "display_order": 2, "dropdown_options": null },
+      { "label": "Authorization Letter (if claimant is a representative)", "field_type": "checkbox", "is_required": false, "display_order": 3, "dropdown_options": null },
+      { "label": "Identification Card of Authorized Representative", "field_type": "checkbox", "is_required": false, "display_order": 4, "dropdown_options": null }
+    ]
+  },
+  {
+    "name": "Issuance of Good Moral Certificate",
+    "service_mode": null,
+    "office": "Office of Student Services",
+    "responsible_unit": "Office of Student Services",
+    "classification": "Simple",
+    "sla_target_value": 37,
+    "sla_target_unit": "minutes",
+    "required_documents": "Accomplished Request Form; Identification Card; Authorization Letter and ID if representative",
+    "processing_steps": [
+      "Submit accomplished request form to the OSS",
+      "Staff logs request and issues claim stub",
+      "Process and prepare the Good Moral Certificate",
+      "Issue certificate; client signs logbook"
+    ],
+    "expected_output": "Good Moral Certificate issued to the student",
+    "status": "active",
+    "intake_fields": [
+      { "label": "Accomplished Request Form (1 Original Copy, from Office of Student Services)", "field_type": "checkbox", "is_required": true, "display_order": 1, "dropdown_options": null },
+      { "label": "Identification Card (1 Original Copy, from requestor)", "field_type": "checkbox", "is_required": true, "display_order": 2, "dropdown_options": null },
+      { "label": "Authorization Letter (if claimant is a representative)", "field_type": "checkbox", "is_required": false, "display_order": 3, "dropdown_options": null },
+      { "label": "Identification Card of Authorized Representative", "field_type": "checkbox", "is_required": false, "display_order": 4, "dropdown_options": null }
+    ]
+  },
+  {
+    "name": "Issuance of Lost and Replacement of Identification Card (OSS)",
+    "service_mode": null,
+    "office": "Office of Student Services",
+    "responsible_unit": "Office of Student Services",
+    "classification": "Simple",
+    "sla_target_value": 2903,
+    "sla_target_unit": "minutes",
+    "required_documents": "Notarized Affidavit of Loss; Form PUP-NRID-5-OFSS-007; Proof of Payment",
+    "processing_steps": [
+      "Submit filled-out replacement ID form to the Office of Student Services",
+      "Pay corresponding fee at Cashier",
+      "Present official receipt for processing and issuance of replacement ID",
+      "Sign in the OSS logbook"
+    ],
+    "expected_output": "Replacement ID issued to the student",
+    "status": "active",
+    "intake_fields": [
+      { "label": "Notarized Affidavit of Loss (1 Original Copy, from Notary Public)", "field_type": "checkbox", "is_required": true, "display_order": 1, "dropdown_options": null },
+      { "label": "Form PUP-NRID-5-OFSS-007 — Application for Replacement of Lost ID (1 Original Copy, from Admissions Office)", "field_type": "checkbox", "is_required": true, "display_order": 2, "dropdown_options": null },
+      { "label": "Proof of Payment — Official Receipt from Cashier (1 Original Copy)", "field_type": "checkbox", "is_required": true, "display_order": 3, "dropdown_options": null }
+    ]
+  },
+  {
+    "name": "Issuance of Permission of Student Development Center",
+    "service_mode": null,
+    "office": "Office of Student Services",
+    "responsible_unit": "Office of Student Services",
+    "classification": "Simple",
+    "sla_target_value": 7,
+    "sla_target_unit": "minutes",
+    "required_documents": "Letter of Request",
+    "processing_steps": [
+      "Submit letter of intent to the Office of Student Services",
+      "Staff receives and logs; submits to OSS Director for signature; creates DTS number",
+      "Endorse signed request to concerned sector head"
+    ],
+    "expected_output": "Permission granted; request endorsed to concerned sector head",
+    "status": "active",
+    "intake_fields": [
+      { "label": "Letter of Request or Letter of Intent addressed to the OSS Director (1 Original Copy, prepared by client)", "field_type": "checkbox", "is_required": true, "display_order": 1, "dropdown_options": null }
+    ]
+  },
+  {
+    "name": "Processing of Application for Student Fund-Raising",
+    "service_mode": null,
+    "office": "Office of Student Services",
+    "responsible_unit": "Office of Student Services",
+    "classification": "Simple",
+    "sla_target_value": 75,
+    "sla_target_unit": "minutes",
+    "required_documents": "Letter of Request",
+    "processing_steps": [
+      "Submit letter of intent to the Office of Student Services",
+      "Staff receives; submits to OSS Director for signature; creates DTS number",
+      "Endorse signed request to concerned sector head; tag student signatories on SIS"
+    ],
+    "expected_output": "Fund-raising application approved and endorsed",
+    "status": "active",
+    "intake_fields": [
+      { "label": "Letter of Request for Student Fund-Raising (1 Original Copy, prepared by client or organization)", "field_type": "checkbox", "is_required": true, "display_order": 1, "dropdown_options": null }
+    ]
+  },
+  {
+    "name": "Processing of Request for On-Campus Student Activities",
+    "service_mode": "On-Campus",
+    "office": "Office of Student Services",
+    "responsible_unit": "Office of Student Services",
+    "classification": "Simple",
+    "sla_target_value": 75,
+    "sla_target_unit": "minutes",
+    "required_documents": "Letter of Request",
+    "processing_steps": [
+      "Submit letter of intent to the Office of Student Services",
+      "Staff receives; submits to OSS Director for signature; creates DTS number",
+      "Endorse signed request to concerned sector head; tag student signatories on SIS"
+    ],
+    "expected_output": "On-campus activity request approved and endorsed",
+    "status": "active",
+    "intake_fields": [
+      { "label": "Letter of Request or Letter of Intent for On-Campus Activity (1 Original Copy, prepared by client or organization)", "field_type": "checkbox", "is_required": true, "display_order": 1, "dropdown_options": null }
+    ]
+  },
+  {
+    "name": "Processing of Student Application for Off-Campus Activities",
+    "service_mode": "Off-Campus",
+    "office": "Office of Student Services",
+    "responsible_unit": "Office of Student Services",
+    "classification": "Highly Technical",
+    "sla_target_value": 2880,
+    "sla_target_unit": "minutes",
+    "required_documents": "Off-Campus Activity Checklist Form; Letter of Intent (ANNEX B); Summary List of Participants (ANNEX C); Student Certificate of Registration; Endorsement Letter to Medical Office (ANNEX E); Medical Clearance; First Aid Kit list; Group Insurance; Consent Form with parent/guardian ID; Assumption of Responsibility (ANNEX F); Additional requirements per activity type",
+    "processing_steps": [
+      "Submit pre-approval requirements to the Office of Student Services",
+      "Staff assesses completeness; issues DTS number; forwards to OSS Director",
+      "Endorse to concerned sector head for recommendation and approval",
+      "Submit post-approval requirements (itinerary, updated clearance, risk plan, insurance, procurement docs if applicable)",
+      "Receive final approval; conduct the activity",
+      "Submit narrative report after activity completion"
+    ],
+    "expected_output": "Off-campus activity permit approved; narrative report submitted after activity",
+    "status": "active",
+    "intake_fields": [
+      { "label": "Off-Campus Activity Checklist Form (1 Original Copy, from Office of Student Services)", "field_type": "checkbox", "is_required": true, "display_order": 1, "dropdown_options": null },
+      { "label": "ANNEX B — Letter of Intent addressed to Sector Head, recommended by Director/Dean (1 Original Copy)", "field_type": "checkbox", "is_required": true, "display_order": 2, "dropdown_options": null },
+      { "label": "ANNEX C — Summary List of All Participants with respective colleges (1 Original Copy)", "field_type": "checkbox", "is_required": true, "display_order": 3, "dropdown_options": null },
+      { "label": "Latest Student Certificate of Registration (1 Original Copy, from Admissions Office)", "field_type": "checkbox", "is_required": true, "display_order": 4, "dropdown_options": null },
+      { "label": "ANNEX E — Endorsement Letter from Dean/Director to Medical and Dental Services Office (1 Original Copy)", "field_type": "checkbox", "is_required": true, "display_order": 5, "dropdown_options": null },
+      { "label": "Medical Clearance (1 Original Copy, from Medical and Dental Services Office)", "field_type": "checkbox", "is_required": true, "display_order": 6, "dropdown_options": null },
+      { "label": "First Aid Kit List with signature of Medical and Dental Services Office staff (1 Original Copy)", "field_type": "checkbox", "is_required": true, "display_order": 7, "dropdown_options": null },
+      { "label": "Group Insurance for all participants (1 Original Copy)", "field_type": "checkbox", "is_required": true, "display_order": 8, "dropdown_options": null },
+      { "label": "Consent Form signed by parent/guardian with photocopy of parent/guardian valid ID (1 Original Copy)", "field_type": "checkbox", "is_required": true, "display_order": 9, "dropdown_options": null },
+      { "label": "ANNEX F — Assumption of Responsibility of Personnel-in-Charge and Sector Head (1 Original Copy)", "field_type": "checkbox", "is_required": true, "display_order": 10, "dropdown_options": null },
+      { "label": "Endorsement from Research Management Office (for research-related activities only)", "field_type": "checkbox", "is_required": false, "display_order": 11, "dropdown_options": null },
+      { "label": "Copy of Curriculum (for curricular activities only)", "field_type": "checkbox", "is_required": false, "display_order": 12, "dropdown_options": null },
+      { "label": "Request letter showing advance coordination with Local Government or NGOs (for curricular activities)", "field_type": "checkbox", "is_required": false, "display_order": 13, "dropdown_options": null },
+      { "label": "Passport of Participant (1 Photocopy — for activities outside the country only)", "field_type": "checkbox", "is_required": false, "display_order": 14, "dropdown_options": null },
+      { "label": "ANNEX G — Risk Assessment Plan approved by Dean/Director (post-approval, for international activities)", "field_type": "checkbox", "is_required": false, "display_order": 15, "dropdown_options": null },
+      { "label": "Consultation minutes with students and stakeholders with wet signature (post-approval, international)", "field_type": "checkbox", "is_required": false, "display_order": 16, "dropdown_options": null },
+      { "label": "Procurement Requirements (for activities involving procurement or outsourcing of equipment, facilities, or services)", "field_type": "checkbox", "is_required": false, "display_order": 17, "dropdown_options": null }
+    ]
+  }
+]
